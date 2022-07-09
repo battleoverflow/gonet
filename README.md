@@ -1,9 +1,5 @@
 # Syndicate
-Network communication CLI tool for gathering network information across multiple variants
-
-Syndicate is an extremely simplistic and CLI tool built in Go.
-
-Please do not take this project too seriously. This was more of an attempt at me improving my Go experience.
+Network CLI tool for gathering network information. Syndicate is an extremely simplistic CLI tool built in Go. Please don't take this project too seriously. This was more of an attempt to improve my Go experience. I may add more in the future and continue to expand this project, but it may not be for awhile.
 
 Commands:
 ```
