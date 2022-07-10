@@ -8,6 +8,7 @@ ns --host       |   Search for the nameservers of an available host
 ip --host       |   Gathers IP addresses about the specified host
 cname --host    |   Gathers CNAME information about the specified host
 mx --host       |   Gathers MX records from the specified host
+txt --host      |   Gathers TXT records from the specified host
 all --host      |   Prints every command in a single output
 ```
 
@@ -31,6 +32,11 @@ go run cmd/syn/syn.go cname --host WebsiteUrl
 ## mx
 ```bash
 go run cmd/syn/syn.go mx --host WebsiteUrl
+```
+
+## txt
+```bash
+go run cmd/syn/syn.go txt --host WebsiteUrl
 ```
 
 ## all

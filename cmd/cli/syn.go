@@ -13,9 +13,9 @@ func main() {
 		controller := cli.NewApp()
 
 		controller.Name = "Syndicate"
-		controller.Usage = "Network communication CLI tool for gathering network information across multiple variants"
+		controller.Usage = "Network CLI tool for gathering information across multiple areas"
 
-		version := "v0.1.3"
+		version := "v0.1.4"
 		author := "Hifumi1337 (https://github.com/Hifumi1337)"
 
 		defaultValues := []cli.Flag {
@@ -148,16 +148,44 @@ func main() {
 			},
 		},
 		{
+			Name: "txt",
+			Usage: "Gathers TXT records from the specified host",
+			Flags:defaultValues,
+
+			// txt command activated
+			Action: func(cmd *cli.Context) error {
+				txt, err := net.LookupTXT(cmd.String("host"))
+
+				if err != nil {
+					fmt.Println(err)
+				}
+
+				// TXT Record
+				fmt.Println("TXT Record(s):")
+				fmt.Println("==============================")
+
+				// Logs results to terminal
+				for i := 0; i < len(txt); i++ {
+					fmt.Println("[*]", txt[i])
+				}
+
+				fmt.Println("==============================")
+
+				return nil
+			},
+		},
+		{
 			Name: "all",
 			Usage: "Prints every command in a single output",
 			Flags:defaultValues,
 
-			// mx command activated
+			// all command activated
 			Action: func(cmd *cli.Context) error {
 				ns, err := net.LookupNS(cmd.String("host"))
 				ip, err := net.LookupIP(cmd.String("host"))
 				cname, err := net.LookupCNAME(cmd.String("host"))
 				mx, err := net.LookupMX(cmd.String("host"))
+				txt, err := net.LookupTXT(cmd.String("host"))
 
 				if err != nil {
 					fmt.Println(err)
@@ -203,7 +231,17 @@ func main() {
 				for i := 0; i < len(mx); i++ {
 					fmt.Println("Host:", mx[i].Host)
 					fmt.Println("Priority:", mx[i].Pref)
-					fmt.Println("\n")
+				}
+
+				fmt.Println("\n")
+
+				// TXT Record
+				fmt.Println("TXT Record(s):")
+				fmt.Println("==============================")
+
+				// Logs results to terminal
+				for i := 0; i < len(txt); i++ {
+					fmt.Println("[*]", txt[i])
 				}
 
 				return nil
