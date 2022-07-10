@@ -1,5 +1,5 @@
 # Syndicate
-Network CLI tool for gathering network information. Syndicate is an extremely simplistic CLI tool built in Go. Please don't take this project too seriously. This was more of an attempt to improve my Go experience. I may add more in the future and continue to expand this project, but it may not be for awhile.
+Network CLI tool for gathering information across multiple areas. It's main purpose is to discover public network information, such as nameservers, domain records, and ip addresses.
 
 Commands:
 ```
