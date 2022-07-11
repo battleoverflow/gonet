@@ -13,9 +13,9 @@ func NetCommands() {
 		controller := cli.NewApp()
 
 		controller.Name = "Syndicate"
-		controller.Usage = "Network CLI tool for gathering information across multiple areas"
+		controller.Usage = "CLI tool for gathering information about a host (URL)"
 
-		version := "v0.2.5"
+		version := "v0.2.6"
 		author := "Hifumi1337 (https://github.com/Hifumi1337)"
 
 		defaultValues := []cli.Flag {
@@ -30,7 +30,7 @@ func NetCommands() {
 		controller.Commands = []cli.Command {
 		{
 			Name: "version",
-			Usage: "Version information",
+			Usage: "Version information for Syndicate",
 			Flags: defaultValues,
 
 		Action: func(cmd *cli.Context) error {
@@ -42,7 +42,7 @@ func NetCommands() {
 		},
 		{
 			Name: "ns",
-			Usage: "Gathers nameserver information about the specified host",
+			Usage: "Returns nameserver information about a particular host",
 			Flags: defaultValues,
 
 			// ns command activated
@@ -75,7 +75,7 @@ func NetCommands() {
 		},
 		{
 			Name: "ip",
-			Usage: "Gathers IP addresses about the specified host",
+			Usage: "Returns IP address(es) associated with a particular host",
 			Flags:defaultValues,
 
 			// ip command activated
@@ -108,7 +108,7 @@ func NetCommands() {
 		},
 		{
 			Name: "cname",
-			Usage: "Gathers CNAME information about the specified host",
+			Usage: "Returns CNAME record(s) about a particular host",
 			Flags:defaultValues,
 
 			// cname command activated
@@ -139,7 +139,7 @@ func NetCommands() {
 		},
 		{
 			Name: "mx",
-			Usage: "Gathers MX records from the specified host",
+			Usage: "Returns MX record(s) about a particular host",
 			Flags:defaultValues,
 
 			// mx command activated
@@ -173,7 +173,7 @@ func NetCommands() {
 		},
 		{
 			Name: "txt",
-			Usage: "Gathers TXT records from the specified host",
+			Usage: "Returns TXT record(s) about a particular host",
 			Flags:defaultValues,
 
 			// txt command activated
@@ -206,7 +206,7 @@ func NetCommands() {
 		},
 		{
 			Name: "all",
-			Usage: "Prints every command in a single output",
+			Usage: "Returns all information about a particular host",
 			Flags:defaultValues,
 
 			// all command activated
