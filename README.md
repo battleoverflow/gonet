@@ -1,5 +1,5 @@
 # Syndicate
-Network CLI tool for gathering information across multiple areas. It's main purpose is to discover public network information, such as nameservers, domain records, and ip addresses.
+CLI tool for gathering information about a host (URL). It can discover public network information, including namervers, ip addressess, and numerous kinds of records saved on the server(s).
 
 The following information is returned, based on the user's choice:
 
@@ -11,13 +11,13 @@ The following information is returned, based on the user's choice:
 
 Commands:
 ```
-help            |   Help menu
-ns --host       |   Search for the nameservers of an available host
-ip --host       |   Gathers IP addresses about the specified host
-cname --host    |   Gathers CNAME information about the specified host
-mx --host       |   Gathers MX records from the specified host
-txt --host      |   Gathers TXT records from the specified host
-all --host      |   Prints every command in a single output
+help     |   Help menu
+ns       |   Returns nameserver information about a particular host
+ip       |   Returns IP address(es) associated with a particular host
+cname    |   Returns CNAME record(s) about a particular host
+mx       |   Returns MX record(s) about a particular host
+txt      |   Returns TXT record(s) about a particular host
+all      |   Returns all information about the particular host
 ```
 
 ## Example(s)
