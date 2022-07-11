@@ -1,4 +1,4 @@
-module syndicate/v0
+module syndicate
 
 go 1.18
 
