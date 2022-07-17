@@ -1,4 +1,4 @@
-# Syndicate
+# GoNet
 CLI tool for gathering information about a host (URL). It can discover public network information, including namervers, ip addressess, and numerous kinds of records saved on the server(s).
 
 The following information is returned, based on the user's choice:
@@ -12,7 +12,7 @@ The following information is returned, based on the user's choice:
 Commands:
 ```
 help     |   Help menu
-version  |   Version information for Syndicate
+version  |   Version information for GoNet
 ns       |   Returns nameserver information about a particular host
 ip       |   Returns IP address(es) associated with a particular host
 cname    |   Returns CNAME record(s) about a particular host

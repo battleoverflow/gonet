@@ -1,7 +1,7 @@
 package main
 
 import (
-	cmds "syndicate/cmds/cli"
+	cmds "gonet/cmds/cli"
 )
 
 func main() {

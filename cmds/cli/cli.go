@@ -12,10 +12,10 @@ import (
 func NetCommands() {
 		controller := cli.NewApp()
 
-		controller.Name = "Syndicate"
+		controller.Name = "GoNet"
 		controller.Usage = "CLI tool for gathering information about a host (URL)"
 
-		version := "v0.2.6"
+		version := "v0.2.7"
 		author := "Hifumi1337 (https://github.com/Hifumi1337)"
 
 		defaultValues := []cli.Flag {
@@ -30,11 +30,11 @@ func NetCommands() {
 		controller.Commands = []cli.Command {
 		{
 			Name: "version",
-			Usage: "Version information for Syndicate",
+			Usage: "Version information for GoNet",
 			Flags: defaultValues,
 
 		Action: func(cmd *cli.Context) error {
-				fmt.Println("Syndicate |", version)
+				fmt.Println("GoNet |", version)
 				fmt.Println("Author:", author)
 				
 				return nil
@@ -221,7 +221,7 @@ func NetCommands() {
 				// 	return err
 				// }
 				
-				fmt.Println("Syndicate |", version)
+				fmt.Println("GoNet |", version)
 				fmt.Println("Author:", author)
 
 				fmt.Println("\n")

@@ -1,4 +1,4 @@
-module syndicate
+module gonet
 
 go 1.18
 
