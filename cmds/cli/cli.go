@@ -1,3 +1,6 @@
+
+// Author: azazelm3dj3d
+
 package cli
 
 import (
@@ -16,13 +19,13 @@ func NetCommands() {
 		controller.Usage = "CLI tool for gathering information about a host (URL)"
 
 		version := "v0.2.7"
-		author := "Hifumi1337 (https://github.com/Hifumi1337)"
+		author := "azazelm3dj3d (https://github.com/azazelm3dj3d)"
 
 		defaultValues := []cli.Flag {
 			cli.StringFlag {
 				// Default values for commands
 				Name: "host",
-				Value: "hifumi1337.io",
+				Value: "azazelm3dj3d.com",
 			},
 		}
 

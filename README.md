@@ -1,7 +1,7 @@
 # GoNet
-CLI tool for gathering information about a host (URL). It can discover public network information, including namervers, ip addressess, and numerous kinds of records saved on the server(s).
+CLI tool for gathering information about a host (URL). It can discover public network information, including nameservers, ip addresses, and other relevant records about the server(s).
 
-The following information is returned, based on the user's choice:
+The following information is returned, based on the user's input:
 
 - Nameserver Record(s)
 - IP Address Information (IPv4 & IPv6)
