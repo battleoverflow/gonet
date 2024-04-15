@@ -1,5 +1,5 @@
 
-// Author: azazelm3dj3d
+// Author: battleoverflow
 
 package cli
 
@@ -19,13 +19,13 @@ func NetCommands() {
 		controller.Usage = "CLI tool for gathering information about a host (URL)"
 
 		version := "v0.2.7"
-		author := "azazelm3dj3d (https://github.com/azazelm3dj3d)"
+		author := "battleoverflow (https://github.com/battleoverflow)"
 
 		defaultValues := []cli.Flag {
 			cli.StringFlag {
 				// Default values for commands
 				Name: "host",
-				Value: "azazelm3dj3d.com",
+				Value: "google.com",
 			},
 		}
 

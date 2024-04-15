@@ -1,6 +1,6 @@
 package main
 
-// Author: azazelm3dj3d
+// Author: battleoverflow
 
 import (
 	cmds "gonet/cmds/cli"
